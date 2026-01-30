@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biograph.digital | Your Life, Remembered.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-pearl: #fdfaf6;
+      --soft-sage: #dbe9d8;
+      --soft-peach: #fce4d8;
+      --soft-blue: #d8e6fc;
+      --text-main: #2d2d2d;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: var(--bg-pearl);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .pastel-grid {
+      background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+    .soft-shadow {
+      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -15px rgba(0,0,0,0.08);
+    }
+    ::selection {
+      background: var(--soft-sage);
+      color: #2d2d2d;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="pastel-grid">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
